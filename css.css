@@ -1,0 +1,297 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    position: sticky;
+    top: -400px;
+    left: 0px;
+    z-index: 2;
+}
+.header_tlo{
+    width: 100%;
+    height: 400px;
+    background-image:url(IMG/header.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_tlo span{
+    font-size: 100px;
+    color: white;
+    background-color: rgba(78, 78, 78, 0.8);
+    border-radius: 30px;
+}
+.nawigacia{
+    width: 100%;
+    height: fit-content;
+    background-image: linear-gradient(  rgb(80, 80, 80),rgb(19, 19, 19),rgb(80, 80, 80));
+}
+.nawigacia ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.nawigacia li{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.527);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rock-nav:hover{
+    background-image:linear-gradient( to right,blue,rgba(0, 0, 0, 0.486),blue);
+    box-shadow: 5px 3px 6px 0px blue;
+}
+.pop-nav:hover{
+    background-image:linear-gradient( to right,pink,rgba(0, 0, 0, 0.486),pink);
+    box-shadow: 5px 3px 6px 0px pink;
+}
+.reggae-nav:hover{
+    background-image:linear-gradient( to right,yellow,rgba(0, 0, 0, 0.486),yellow);
+    box-shadow: 5px 3px 6px 0px yellow;
+}
+.disco-nav:hover{
+    background-image:linear-gradient( to right,blueviolet,rgba(0, 0, 0, 0.486),blueviolet);
+    box-shadow: 5px 3px 6px 0px blueviolet;
+
+}
+.rap-nav:hover{
+    background-image:linear-gradient( to right,red,rgba(0, 0, 0, 0.486),red);
+    box-shadow: 5px 3px 6px 0px red;
+}
+.techno-nav:hover{
+    background-image:linear-gradient( to right,green,rgba(0, 0, 0, 0.486),green);
+    box-shadow: 5px 3px 6px 0px green;
+}
+.home-nav:hover{
+    background-image:linear-gradient( to right,white,rgba(0, 0, 0, 0.486),white);
+    box-shadow: 5px 3px 6px 0px white;
+}
+.nawigacia a{
+    width: 100%;
+    margin: 5px;
+    border:5px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease-out;
+}
+.nawigacia a:hover{
+    transform: scale(0.9);
+}
+.strzalka {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+.strzalka::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 0 15px;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nav-guzik{
+    display: none;
+    background-color: rgb(19, 19, 19);
+    justify-content: center;
+}
+main{
+    padding: 4%;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+}
+.rock{
+    background-image: url(IMG/rock/slanted-gradient.svg);
+}
+.pop{
+    background-image: url(IMG/pop/sun-tornado.svg);
+}
+.rap{
+    background-image: url(IMG/rap/flat-mountains.svg);
+}
+.reggae{
+    background-image: url(IMG/reggae/spectrum-gradient.svg);
+}
+.disco{
+    background-image: url(IMG/disco/rose-petals.svg);
+}
+.techno{
+    background-image: url(IMG/techno/quantum-gradient.svg);
+}
+.home{
+    background-image: url(IMG/hollowed-boxes.svg);
+    background-size: auto;
+    background-attachment: local;
+}
+.nad-audio , .nad-tekst{
+    color: white;
+    font-size: 20px;
+    background-color: rgb(37, 37, 37);
+    margin-bottom: 12px;
+    text-align: center;
+}
+.nad-tekst{
+    width: 97%;
+}
+.nad-audio{
+    min-width: 400px;
+}
+.audio{
+    width: 400px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: sticky;
+    top: 60px;
+}
+.rock .audio{
+    background-image:url(IMG/rock/blob-scene-haikei.svg);
+}
+.pop .audio{
+    background-image: url(IMG/pop/layered-waves-haikei.svg);
+}
+.reggae .audio{
+    background-image: url(IMG/reggae/blurry-gradient-haikei.svg);
+}
+.disco .audio{
+    background-image: url(IMG/disco/blob-scatter-haikei.svg);
+}
+.rap .audio{
+    background-image: url(IMG/rap/low-poly-grid-haikei.svg);
+}
+.techno .audio{
+    background-image: url(IMG/techno/layered-steps-haikei.svg);
+}
+.suwak{
+    width: 380px;
+    background-color: rgb(58, 58, 58);
+    border-radius: 70px;
+    margin: 5px 13px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.suwak>h4{
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.suwak>audio{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 0px rgba(193, 193, 193, 1);
+}
+.yt span , .spotify span{
+    color: white;
+    font-size: 13px;
+    text-align: center;
+}
+.yt img , .spotify img{
+    height: 15px;
+}
+.yt div , .spotify div{
+    background-color: rgb(80, 80, 80);
+    border-radius: 12px;
+    margin-top: 10px;
+    border-left: 20px solid rgb(80, 80, 80);
+    border-right: 20px solid rgb(80, 80, 80) ;
+    box-shadow: 0px 0px 10px 0px rgba(193, 193, 193, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease-out;
+}
+.yt div:hover , .spotify div:hover{
+    transform: scale(1.2);
+}
+.yt , .spotify{
+    margin-left: auto;
+    margin-right: auto; 
+    text-decoration: none;
+}
+.tekst{
+    background-color: rgba(37, 37, 37, 0.5);
+    color: white;
+    padding: 20px;
+    margin-right: 3%;
+    text-align: justify;
+}
+footer{
+    height: 50px;
+    background-color: rgb(37, 37, 37);
+    text-align: center;
+}
+footer p{
+    color: white;
+    margin: 0%;
+}
+@media only screen and (max-width:845px){
+    main{
+        display: block;
+        padding: 10px;
+    }
+    .tekst{
+        margin-right: 0%;
+    }
+    .nad-tekst{
+        width: 100%;
+    }
+    .nad-audio{
+        margin-top: 10px;
+    }
+    .audio{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width:800px){
+    .header_tlo span{
+        font-size: 12vw;
+        border-radius: 3vw;
+    }
+}
+@media only screen and (max-width: 600px){
+    main{
+        padding: 0%;
+    }
+    header{
+        top: -610px;
+    }
+    .nawigacia ul{
+        display: block;
+    }
+    .nawigacia a{
+        display: block;
+        width: 97%;
+        margin: 10px auto;
+    }
+    .nawigacia a:last-child{
+        margin-bottom: 0;
+    }
+    .nawigacia a:first-child{
+        margin-top: 0;
+    }
+    .audio{
+        padding: 0%;
+    }
+}
